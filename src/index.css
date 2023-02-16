@@ -1,0 +1,82 @@
+* {
+  --bg-color: #d5f0d1;
+  --bg-color-2: #bad1b6;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#root, body {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+
+.nav {
+  border-bottom: 1px solid black;
+  background-color: #f8f9fa;
+  box-shadow: -2px 1.5px;
+}
+
+.c-nav-link {
+  font-size: larger;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  border-right: .5px solid var(--bg-color-2);
+  padding: .5rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.nav-link-focus:focus, .nav-link-focus:hover {
+  background-color: var(--bg-color-2);
+
+}
+
+.login {
+  background-color: var(--bg-color-2);
+  padding: .5rem 2rem;
+  border-radius: 5px;
+  box-shadow: -8px 6px;
+}
+
+.card {
+  min-height: 10rem;
+  max-height: 10rem;
+}
+
+.card-body {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .card-body p {
+  overflow: hidden;
+  height: fit-content;
+} */
+
+.single-post {
+  background-color: white;
+  overflow-y: auto;
+  margin: 1rem 0;
+  height: 80vh;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  box-shadow: -5px 4px;
+  
+}
+
+.single-post .single-post-title {
+  border-bottom: 2px solid black;
+  width: 75%;
+  margin: 0 auto 1.5rem auto;
+  font-style: italic;
+}
+
+.date {
+  text-align: right;
+  font-style: italic;
+  font-size: smaller;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  opacity: .6;
+}
+
