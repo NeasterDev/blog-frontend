@@ -27,12 +27,13 @@ This site allows users to create an account, create posts that can be viewed by 
 
 ## Installation
 
-To install run `cd frontend && npm i`
+To install run `npm i`
 
 
 ## Usage 
 
-To run the application first, run the BlogApplication.java file to start the backend. Second, cd into frontend and run `npm start` this will open the application.
+For this app to work locally, you will also need the blog backend api available at https://github.com/NeasterDev/blog-app-backend-api
+To run the application, first, run the BlogApplication.java file to start the backend. Second, cd into frontend and run `npm start` this will open the application.
 
 
 ## License
