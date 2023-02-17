@@ -14,7 +14,7 @@ export default class UserPosts extends React.Component {
 
     // Get the logged in users posts
     getCurrentUserPosts = () => {
-        fetch("http://localhost:8080/api/user/current", {
+        fetch("https://blog-backend-api.herokuapp.com/api/user/current", {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json",
@@ -31,7 +31,7 @@ export default class UserPosts extends React.Component {
 
     // delete the current users account
     deleteCurrentUser = () => {
-        fetch(`http://localhost:8080/api/user/${this.state.id}`, {
+        fetch(`https://blog-backend-api.herokuapp.com/api/user/${this.state.id}`, {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json",

@@ -21,7 +21,7 @@ const ViewSinglePost = ({ loggedInUser }) => {
 
   // retreive blog post from the server/db
   const getSingleBlogPost = () => {
-    fetch(`http://localhost:8080/api/blog/${postId}`, {
+    fetch(`https://blog-backend-api.herokuapp.com/api/blog/${postId}`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ const ViewSinglePost = ({ loggedInUser }) => {
   const editPost = () => {
     if (isEdit) {
       setIsEdit(false);
-      fetch(`http://localhost:8080/api/user/updatepost/${postId}`, {
+      fetch(`https://blog-backend-api.herokuapp.com/api/user/updatepost/${postId}`, {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
@@ -77,7 +77,7 @@ const ViewSinglePost = ({ loggedInUser }) => {
   };
 
   const deletePost = () => {
-    fetch(`http://localhost:8080/api/blog/${postId}`, {
+    fetch(`https://blog-backend-api.herokuapp.com/api/blog/${postId}`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",

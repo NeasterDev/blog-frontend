@@ -24,7 +24,7 @@ export default class BlogPost extends React.Component {
   saveBlogPost = (e) => {
     // server call to save blog post
     this.setState({ ...this.state, msg: "Submitting..." });
-    fetch(`http://localhost:8080/api/user/post`, {
+    fetch(`https://blog-backend-api.herokuapp.com/api/user/post`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
