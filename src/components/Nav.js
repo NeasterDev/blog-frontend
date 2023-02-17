@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default class Nav extends React.Component {
     // method to call the logout route to the server
     logout = () => {
-        fetch("http://localhost:8080/api/user/logout", {
+        fetch("https://blog-backend-api.herokuapp.com/api/user/logout", {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json",
