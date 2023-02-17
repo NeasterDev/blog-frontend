@@ -16,7 +16,7 @@ export default class RenderBlogPosts extends React.Component {
   // method to retreive all blog posts from the database
   getBlogPosts = async () => {
     // fetch the server to retreive data from database
-    const posts = await fetch("http://localhost:8080/api/user/users", {
+    const posts = await fetch("https://blog-backend-api.herokuapp.com/api/user/users", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
